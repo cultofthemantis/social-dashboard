@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --lime: hsl(163, 72%, 41%);
+  --red: hsl(356, 69%, 56%);
+
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --youtube: hsl(348, 97%, 39%);
+  --instagram-start: hsl(37, 97%, 70%);
+  --instagram-end: hsl(329, 70%, 58%);
+
+  --bg: hsl(0, 0%, 100%);
+  --top-bg: hsl(225, 100%, 98%);
+  --card: hsl(227, 47%, 96%);
+  --text: hsl(230, 17%, 14%);
+  --subtext: hsl(228, 12%, 44%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --bg: hsl(230, 17%, 14%);
+  --top-bg: hsl(232, 19%, 15%);
+  --card: hsl(228, 28%, 20%);
+  --text: hsl(0, 0%, 100%);
+  --subtext: hsl(228, 34%, 66%);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
 }
